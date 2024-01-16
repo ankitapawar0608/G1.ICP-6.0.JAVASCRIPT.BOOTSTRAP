@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allcakes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="../Javascript/Allcakes.js"></script>
-    <style>
-        .img:hover{
-            transition: 0.3s;
-        transform: scale(1.1);
-        }
-        .bg{
-            background-color: #3E3232;
-        }
-        .bg1{
-          background-color: #7E6363;
-        }
-        
-        .font-color{
-            color: white;
-        }
-        .font-color:hover
-        {
-          color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allcakes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../CSS/footer.css">
+  <script src="../Javascript/Allcakes.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Salsa&display=swap"
+      rel="stylesheet">
+  <style>
+    body{
+      font-family: 'Merriweather', serif;
+font-family: 'Salsa', cursive;
+    }
+    .img:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+
+    .bg {
+      background-color: #3E3232;
+    }
+
+    .bg1 {
+      background-color: #7E6363;
+    }
+
+    .font-color {
+      color: white;
+    }
+
+    .font-color:hover {
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-lg bg">
     <div class="container-fluid">
       <img src="../IMGS/homepage img/logo.png" class="rounded-circle" style="width: 5%">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link  font-color  ms-4" href="Index.html">Home</a>
+            <a class="nav-link  font-color  ms-4" href="./../Index.html">Home</a>
           </li>
-          
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-color ms-3 " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle font-color ms-3 " href="" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Cakes
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./Pages/Flavouredcakes.html">Flavours</a></li>
-              <li><a class="dropdown-item" href="./Pages/Occassions.html">Occassions</a></li>
+              <li><a class="dropdown-item" href="./../Pages/Flavouredcakes.html">Flavours</a></li>
+              <li><a class="dropdown-item" href="./../Pages/Occassions.html">Occassions</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -66,216 +82,324 @@
         </form>
       </div>
     </div>
-  <a href="./Pages/AddtoCart.html">  <img src="../IMGS/homepage img/shopping-cart.png" class="me-3 "  style="width: 35%"></a>
-   <a href="./Pages/login.html"> <img src="../IMGS/homepage img/login.png" class="me-5"  style="width: 25%"></a>
-      </nav>
+    <a href="./../Pages/AddtoCart.html"> <img src="../IMGS/homepage img/shopping-cart.png" class="me-3 "
+        style="width: 35%"></a>
+    <a href="./../Pages/login.html"> <img src="../IMGS/homepage img/login.png" class="me-5" style="width: 25%"></a>
+  </nav>
 
-    <P class="fs-1  fw-bold text-black mt-3 ms-5 text-center text-color">Cakes: Fresh & Flavourful</P>
-    <div class="container mt-5 d-flex">
+  <P class="fs-1  fw-bold text-black mt-3 ms-5 text-center text-color">Cakes: Fresh & Flavourful</P>
+  <div class="container mt-5 d-flex">
     <div class="card img" style="width: 18rem;">
-        <img src="../IMGS/homepage img/fruit cake1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Fruit Cake</h5>
-          <p class="card-text fw-bold">Delicious Moist Fruit cake</p>
-          <p class="fw-bold">₹ 250</p>
-          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-        </div>
-      </div>
-
-      <div class="card img ms-5" style="width: 18rem;">
-        <img src="../IMGS/Allcakes/cakes2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Black Forest Cake</h5>
-          <p class="card-text fw-bold">Delicious Moist Black Forest Cake</p>
-          <p class="fw-bold">₹ 270</p>
-          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-        </div>
-      </div>
-      <div class="card img ms-5" style="width: 18rem;">
-        <img src="../IMGS/Allcakes/cakes19.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Strawberry Cakes</h5>
-          <p class="card-text fw-bold "> Pink Glam Strawberry Rose</p>
-          <p class="fw-bold">₹ 300</p>
-          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-        </div>
-      </div>
-      <div class="card img ms-5" style="width: 18rem;">
-        <img src="../IMGS/Allcakes/cakes4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Black Forest Cake</h5>
-          <p class="card-text fw-bold">Pretty Rose Black Forest Cake</p>
-          <p class="fw-bold">₹ 200</p>
-          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-        </div>
+      <img src="../IMGS/homepage img/fruit cake1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Fruit Cake</h5>
+        <p class="card-text fw-bold">Delicious Moist Fruit cake</p>
+        <p class="fw-bold">₹ 250</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
       </div>
     </div>
 
-    <div class="container mt-5 d-flex">
-        <div class="card img" style="width: 18rem;">
-            <img src="../IMGS/Allcakes/cakes5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Chocolate Cake</h5>
-              <p class="card-text fw-bold">Most Beautyful Chocolate Ckae</p>
-              <p class="fw-bold">₹ 150</p>
-              <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Black Forest Cake</h5>
+        <p class="card-text fw-bold">Delicious Moist Black Forest Cake</p>
+        <p class="fw-bold">₹ 270</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes19.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Strawberry Cakes</h5>
+        <p class="card-text fw-bold "> Pink Glam Strawberry Rose</p>
+        <p class="fw-bold">₹ 300</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Black Forest Cake</h5>
+        <p class="card-text fw-bold">Pretty Rose Black Forest Cake</p>
+        <p class="fw-bold">₹ 200</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 d-flex">
+    <div class="card img" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes5.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Chocolate Cake</h5>
+        <p class="card-text fw-bold">Most Beautyful Chocolate Ckae</p>
+        <p class="fw-bold">₹ 150</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Butterscotch Cake</h5>
+        <p class="card-text fw-bold">Round Butterscotch Cake</p>
+        <p class="fw-bold">₹ 300</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes7.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Vanilla Cake</h5>
+        <p class="card-text fw-bold">Round Vanilla Photo Pullin...
+        </p>
+        <p class="fw-bold">₹ 250</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes8.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"> Pineapple Cake</h5>
+        <p class="card-text fw-bold">Delicious Moist Pineapple Cake</p>
+        <p class="fw-bold">₹ 280</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 d-flex">
+    <div class="card img" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes9.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Chocolate Cake</h5>
+        <p class="card-text fw-bold">Truffle Dream Cake</p>
+        <p class="fw-bold">₹ 350</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes10.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"> Red Velvet Cake</h5>
+        <p class="card-text fw-bold">Hearty Red Velvet Cake</p>
+        <p class="fw-bold">₹ 200</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes11.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Fruit Cake</h5>
+        <p class="card-text fw-bold">Delicious Fruit Cake</p>
+        <p class="fw-bold">₹ 250</p>
+        <a href="./AddtoCart.html" class="btn  bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes12.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Butterscotch Cake</h5>
+        <p class="card-text fw-bold">Most Beautyful Butterscotch Cake</p>
+        <p class="fw-bold">₹ 350</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 d-flex">
+    <div class="card img" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes13.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Vanilla Cake</h5>
+        <p class="card-text fw-bold">Round Drooling Vanilla Ros...</p>
+        <p class="fw-bold">₹ 400</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes14.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Vanilla Cake</h5>
+        <p class="card-text fw-bold">Heart Snatching Vanilla Cake</p>
+        <p class="fw-bold">₹ 350</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes15.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold"> Chocolate Cake</h5>
+        <p class="card-text fw-bold">Heart Topped Chocolate Cake</p>
+        <p class="fw-bold">₹ 300</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes16.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Fruit Cake</h5>
+        <p class="card-text fw-bold">Round Vanilla Photo Pullin...
+        </p>
+        <p class="fw-bold">₹ 250</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 d-flex">
+    <div class="card img" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes17.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Strawberry Cake</h5>
+        <p class="card-text fw-bold">Vanilla Strawberry Cake</p>
+        <p class="fw-bold">₹ 350</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes18.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Chocolate Cake</h5>
+        <p class="card-text fw-bold">Delicious Chocolate Cake</p>
+        <p class="fw-bold">₹ 400</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Black Forest Cake</h5>
+        <p class="card-text fw-bold">Mystical Love Black Forest Cake</p>
+        <p class="fw-bold">₹ 350</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+    <div class="card img ms-5" style="width: 18rem;">
+      <img src="../IMGS/Allcakes/cakes20.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Strawberry Cake</h5>
+        <p class="card-text fw-bold">Pink Glam Strawberry Rose</p>
+        <p class="fw-bold">₹ 300</p>
+        <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <footer>
+    <div class="footer">
+        <div class="foorte-logo-container">
+            <img src="./../IMGS/homepage img/logo.png" alt="gg-type-logo" class="footer-logo">
+            <h1 class="footer-h1">Sweet Cake</h1>
+            <br><br>
+
+           
+
+        </div>
+        <div class="main-content">
+
+            
+           
+
+
+            <div class="footer1">
+                <h2 class="footer-text">Quick links</h2> <br>
+                <a class="footer-detail" href="./Index.html">Home</a> </br>
+
+                </br>
+                <div class="footer-detail">Cupcakes</div></br>
+                <div class="footer-detail">Login</div></br>
+                <div class="footer-detail">Cakes</div>
+              
+
+
+                <div class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                        class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></div>
             </div>
-          </div>
-    
-          <div class="card img ms-5" style="width: 18rem;">
-            <img src="../IMGS/Allcakes/cakes6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Butterscotch Cake</h5>
-              <p class="card-text fw-bold">Round Butterscotch Cake</p>
-              <p class="fw-bold">₹ 300</p>
-              <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+            <div class="center-box">
+                <h2 class="footer-text">Order Now</h2>
+                <div class="content"><span class="fa-solid fa-location-dot"></span><span class="text"><br>
+                  
+                        <a href="./../Pages/Flavouredcakes.html"> Flavoured Cakes</a></br>
+                        </br>
+                        <a href="./../Pages/Cupcakes.html">Cupcakes</a>
+                        <br><br>
+                        <a href="./../Pages/Occassions.html">Occassions</a>
+                        <br><br>
+                        <a href="./../Pages/pastries.html"> Pastries</a>
+                    </span></div>
             </div>
-          </div>
-          <div class="card img ms-5" style="width: 18rem;">
-            <img src="../IMGS/Allcakes/cakes7.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Vanilla Cake</h5>
-              <p class="card-text fw-bold">Round Vanilla Photo Pullin...
-            </p>
-            <p class="fw-bold">₹ 250</p>
-              <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
+
+            <div class="right-box">
+                <h2 class="footer-text">Contact us</h2>
+                <div class="location-img">
+                    <img src="./../IMGS/google-maps.png" height="18px">
+
+                    <span class="subtitle">307, Kothari Heights, Above Bus </br>
+                        Stand Shrigonda,</br>
+                        A.Nagar - 413701
+                    </span>
+                </div>
+                </br>
+                <div class="phone-img">
+                    <img src="./../IMGS/phone-call.png" height="18px">
+
+
+                    <span class="subtitle">+91-7709482439
+
+                    </span>
+                </div>
+                </br>
+                <div class="mail-img">
+                    <img src="./../IMGS/gmail.png" height="18px">
+
+                    <a href="mailto:customizedcovers1246@email.com">sweetcake@gmail.com</a>
+                </div>
+                </br>
+                </br>
+                <div class="logos">
+
+
+
+
+                    <p><a href="https://www.instagram.com/customized_mobile_cover007" target="_blank"><img
+                                src="./../IMGS/instagram.png" height="25px" alt="Instagram"></a></p>
+                </div>
+
+                <div class="logos">
+                    <p><a href="https://www.facebook.com/#hcdc30smb2k15jw" target="_blank"><img src="./../IMGS/facebook.png"
+                                height="25px" alt="facebook"></a></p>
+
+                </div>
+
+
+
+                <div class="logos">
+                    <p><a href="https://www.youtube.com/results?search_query=customized+phone+cover"
+                            target="_blank"><img src="./../IMGS/youtube.png" height="30px" alt="Youtube"></a></p>
+                </div>
+
+
+
+
+
             </div>
-          </div>
-          <div class="card img ms-5" style="width: 18rem;">
-            <img src="../IMGS/Allcakes/cakes8.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold"> Pineapple Cake</h5>
-              <p class="card-text fw-bold">Delicious Moist Pineapple Cake</p>
-              <p class="fw-bold">₹ 280</p>
-              <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-            </div>
-          </div>
+            </br>
         </div>
 
-        <div class="container mt-5 d-flex">
-            <div class="card img" style="width: 18rem;">
-                <img src="../IMGS/Allcakes/cakes9.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Chocolate Cake</h5>
-                  <p class="card-text fw-bold">Truffle Dream Cake</p>
-                  <p class="fw-bold">₹ 350</p>
-                  <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                </div>
-              </div>
-        
-              <div class="card img ms-5" style="width: 18rem;">
-                <img src="../IMGS/Allcakes/cakes10.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold"> Red Velvet Cake</h5>
-                  <p class="card-text fw-bold">Hearty Red Velvet Cake</p>
-                  <p class="fw-bold">₹ 200</p>
-                  <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                </div>
-              </div>
-              <div class="card img ms-5" style="width: 18rem;">
-                <img src="../IMGS/Allcakes/cakes11.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Fruit Cake</h5>
-                  <p class="card-text fw-bold">Delicious Fruit Cake</p>
-                  <p class="fw-bold">₹ 250</p>
-                  <a href="./AddtoCart.html" class="btn  bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                </div>
-              </div>
-              <div class="card img ms-5" style="width: 18rem;">
-                <img src="../IMGS/Allcakes/cakes12.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Butterscotch Cake</h5>
-                  <p class="card-text fw-bold">Most Beautyful Butterscotch Cake</p>
-                  <p class="fw-bold">₹ 350</p>
-                  <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="container mt-5 d-flex">
-                <div class="card img" style="width: 18rem;">
-                    <img src="../IMGS/Allcakes/cakes13.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Vanilla Cake</h5>
-                      <p class="card-text fw-bold">Round Drooling Vanilla Ros...</p>
-                      <p class="fw-bold">₹ 400</p>
-                      <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                    </div>
-                  </div>
-            
-                  <div class="card img ms-5" style="width: 18rem;">
-                    <img src="../IMGS/Allcakes/cakes14.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Vanilla Cake</h5>
-                      <p class="card-text fw-bold">Heart Snatching Vanilla Cake</p>
-                      <p class="fw-bold">₹ 350</p>
-                      <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                    </div>
-                  </div>
-                  <div class="card img ms-5" style="width: 18rem;">
-                    <img src="../IMGS/Allcakes/cakes15.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold"> Chocolate Cake</h5>
-                      <p class="card-text fw-bold">Heart Topped Chocolate Cake</p>
-                      <p class="fw-bold">₹ 300</p>
-                      <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                    </div>
-                  </div>
-                  <div class="card img ms-5" style="width: 18rem;">
-                    <img src="../IMGS/Allcakes/cakes16.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Fruit Cake</h5>
-                      <p class="card-text fw-bold">Round Vanilla Photo Pullin...
-                    </p>
-                    <p class="fw-bold">₹ 250</p>
-                      <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                    </div>
-                  </div>
-                </div>
+    </div>
 
-                <div class="container mt-5 d-flex">
-                    <div class="card img" style="width: 18rem;">
-                        <img src="../IMGS/Allcakes/cakes17.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold">Strawberry Cake</h5>
-                          <p class="card-text fw-bold">Vanilla Strawberry Cake</p>
-                          <p class="fw-bold">₹ 350</p>
-                          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                        </div>
-                      </div>
-                
-                      <div class="card img ms-5" style="width: 18rem;">
-                        <img src="../IMGS/Allcakes/cakes18.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold">Chocolate Cake</h5>
-                          <p class="card-text fw-bold">Delicious Chocolate Cake</p>
-                          <p class="fw-bold">₹ 400</p>
-                          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                        </div>
-                      </div>
-                      <div class="card img ms-5" style="width: 18rem;">
-                        <img src="../IMGS/Allcakes/cakes3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold">Black Forest Cake</h5>
-                          <p class="card-text fw-bold">Mystical Love Black Forest Cake</p>
-                          <p class="fw-bold">₹ 350</p>
-                          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                        </div>
-                      </div>
-                      <div class="card img ms-5" style="width: 18rem;">
-                        <img src="../IMGS/Allcakes/cakes20.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold">Strawberry Cake</h5>
-                          <p class="card-text fw-bold">Pink Glam Strawberry Rose</p>
-                          <p class="fw-bold">₹ 300</p>
-                          <a href="./AddtoCart.html" class="btn bg btn-outline-secondary text-light ms-5">Add To Card</a>
-                        </div>
-                      </div>
-                    </div>
-                
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
