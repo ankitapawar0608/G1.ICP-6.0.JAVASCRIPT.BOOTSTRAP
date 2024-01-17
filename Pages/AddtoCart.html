@@ -374,27 +374,20 @@ font-family: 'Salsa', cursive;
     <div class="fixed-bottom">
         <div class="text-center fw-bold fs-4 text-danger  mb-2">
             <div style="height: 4rem;" class="bg-light">
-                <div class="d-grid gap-2 col-6 mx-auto ">
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="btn btn-danger me-md-2 mt-3" type="button" id="liveToastBtn"
+                    onclick="toastclick()">Continue</button>
+                    <a href="./checkout.html"> <button class="btn btn-danger mt-3" type="button">Place Order</button></a>
+                  </div>
+                <!-- <div class="d-grid gap-2 col-6 mx-auto ">
 
                     <button class="btn btn-danger mt-3" type="button" id="liveToastBtn"
                         onclick="toastclick()">Continue</button>
 
 
-                    <!-- <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="toast-header">
-                                <img src="..." class="rounded me-2" alt="...">
-                                <strong class="me-auto">Bootstrap</strong>
-                                <small>11 mins ago</small>
-                                <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="toast-body">
-                                Hello, world! This is a toast message.
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+                 
+                </div> -->
             </div>
         </div>
 
@@ -405,10 +398,13 @@ font-family: 'Salsa', cursive;
         </script>
 
     <script>
-        const study = [];
+        const order = [];
         function addToList() {
             const subjectName = document.getElementById("studyInput").value;
-            study.push(subjectName);
+            order.push(subjectName);
+
+            localStorage.setItem("order",JSON.stringify(order));
+
             document.getElementById("studyInput").value = " ";
             loadList();
         }
@@ -418,8 +414,8 @@ font-family: 'Salsa', cursive;
 
             studyList.innerHTML = "";
 
-            for (let i = 0; i < study.length; i++) {
-                studyList.innerHTML = studyList.innerHTML + `<li>${study[i]}</li>`;
+            for (let i = 0; i < order.length; i++) {
+                studyList.innerHTML = studyList.innerHTML + `<li>${order[i]}</li>`;
             }
         }
     </script>
